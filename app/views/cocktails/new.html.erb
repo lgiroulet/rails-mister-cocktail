@@ -1,0 +1,17 @@
+<h1>Create a new cocktail</h1>
+
+<%= form_for(@cocktail) do |f| %>
+
+  <div class="form-group col-3">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+
+
+<% end %>
+
+<br>
+<%= link_to "Back to cocktails list", cocktails_path %>
+
